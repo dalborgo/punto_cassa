@@ -1,0 +1,7 @@
+{
+    "couchbase": {
+        "server": "couchbase://localhost",
+        "bucket": "risto"
+    },
+    "salt":"testApp"
+}
