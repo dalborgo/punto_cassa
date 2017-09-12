@@ -3,5 +3,8 @@
         "server": "couchbase://localhost",
         "bucket": "risto"
     },
+    "printer": {
+        "ip": "10.0.0.130"
+    },
     "salt":"testApp"
 }

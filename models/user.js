@@ -10,19 +10,10 @@ var UserMdl = ottoman.model("User", {
             return new Date()
         }
     },
-    username: "string",
-    email: "string",
+    username: {type: 'string', readonly: true },
     password: "string"
 }, {
-    index: {
-        findByUsername: {
-            by: "username",
-            type: "refdoc"
-        }
-    },
-    id:{
-       id: username
-    }
+       id: 'username'
 });
 
 module.exports = UserMdl;

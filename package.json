@@ -5,18 +5,29 @@
   "author": "Couchbase, Inc.",
   "license": "MIT",
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "start-debug": "node app",
+    "start-nodemon": "nodemon app",
+    "start-prod": "node app"
   },
   "dependencies": {
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.14.2",
+    "connect-assets": "^5.4.0",
+    "connect-couchbase": "^0.2.10",
     "cookie-parser": "^1.4.3",
     "couchbase": "^2.4.0",
+    "debug": "latest",
+    "ejs": "^2.5.7",
+    "escpos": "^2.4.4",
     "express": "^4.13.3",
     "express-flash": "0.0.2",
     "express-session": "^1.15.5",
     "hashids": "*",
+    "morgan": "^1.8.2",
     "multer": "*",
-    "ottoman": "git+https://github.com/couchbaselabs/node-ottoman.git"
+    "ottoman": "git+https://github.com/couchbaselabs/node-ottoman.git",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
   }
 }
