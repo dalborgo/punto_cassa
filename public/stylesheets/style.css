@@ -1,0 +1,9 @@
+body{
+    padding: 2ex
+}
+button{
+    cursor: pointer;
+}
+form#login{
+    max-width: 500px;
+}

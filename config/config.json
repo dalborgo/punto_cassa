@@ -4,7 +4,7 @@
         "bucket": "risto"
     },
     "printer": {
-        "ip": "10.0.0.130"
+        "ip": "10.0.0.115"
     },
     "salt":"testApp"
 }
