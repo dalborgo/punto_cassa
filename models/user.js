@@ -1,7 +1,6 @@
 var ottoman = require("ottoman");
 var validator = require("../validators/validators.js");
 var CompanyMdl = require("./company.js");
-
 ottoman.store = require("../app").store;
 
 var UserMdl = ottoman.model("User", {

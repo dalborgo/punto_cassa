@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node app",
     "start-debug": "node app",
-    "start-nodemon": "nodemon app",
+    "start-nodemon": "nodemon app.js",
     "start-prod": "node app"
   },
   "dependencies": {
@@ -24,10 +24,14 @@
     "express-flash": "0.0.2",
     "express-session": "^1.15.5",
     "hashids": "*",
+    "moment": "^2.18.1",
     "morgan": "^1.8.2",
     "multer": "*",
     "ottoman": "git+https://github.com/couchbaselabs/node-ottoman.git",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.0"
   }
 }

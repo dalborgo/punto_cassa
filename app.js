@@ -28,7 +28,7 @@ const CouchbaseStore = require('connect-couchbase')(session);
 const couchbaseStore = new CouchbaseStore({
     bucket: config.couchbase.bucket,               //optional
     host: config.couchbase.server,          //optional
-    prefix: 'sess::'
+    prefix: 'sess|'
 });
 
 app.use(session({

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <%- css('style') %>
+    <%- css('point_of_sale.assets.0') %>
+    <%- js('jquery-3.2.1.js') %>
+    <script>
+        $(function() {
+            $('.next').on('click',function () {
+                window.location='/api/print';
+            })
+            $('.back').on('click',function () {
+                window.location='/pos';
+            })
+        });
+    </script>
+</head>
+<body>
+    <% if (user) { %>
+        <%- include('include/pay_include', {user: user}); %>
+    <% }else{ %>
+        <p>Fai il login...</p>
+        <button type="button" class="btn btn-primary" onclick="location.href='/Secure'">login</button>
+    <% } %>
+</body>
+</html>

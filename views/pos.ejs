@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <%- css('style') %>
+    <%- css('point_of_sale.assets.0') %>
+    <%- js('jquery-3.2.1.js') %>
+    <script>
+        $(function() {
+            $('.product').on('click',function () {
+                $('.order-empty').addClass('oe_hidden')
+                $('.orderlines').removeClass('oe_hidden')
+                $('.summary').removeClass('oe_hidden')
+            })
+            $('.pay').on('click',function () {
+                window.location='/pay';
+            })
+        });
+    </script>
+</head>
+<body>
+    <% if (user) { %>
+        <%- include('include/pos_include', {user: user}); %>
+    <% }else{ %>
+        <p>Fai il login...</p>
+        <button type="button" class="btn btn-primary" onclick="location.href='/Secure'">login</button>
+    <% } %>
+</body>
+</html>

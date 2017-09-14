@@ -1,0 +1,230 @@
+<div class="o_main_content">
+    <div class="o_control_panel o_hidden"></div>
+    <div class="o_content">
+        <div class="pos">
+            <div class="pos-topheader">
+                <div class="pos-branding">
+                    <img class="pos-logo" src="<%- assetPath('logo.png') %>">
+                    <span class="username">
+           <%- user.username %>
+        </span>
+                </div>
+                <div class="pos-rightheader">
+                    <div class="order-selector">
+            <span class="orders touch-scrollable">
+                        <span class="order-button select-order selected" data-uid="00001-001-0001">
+                            <span class="order-sequence">
+                                1
+                            </span>
+                            09:46
+                        </span>
+            </span>
+                        <span class="order-button square neworder-button">
+                <i class="fa fa-plus"></i>
+            </span>
+                        <span class="order-button square deleteorder-button">
+                <i class="fa fa-minus"></i>
+            </span>
+                    </div>
+
+                    <div class="oe_status js_synch">
+                        <span class="js_msg oe_hidden"></span>
+                        <div class="js_connected oe_icon oe_green">
+                            <i class="fa fa-fw fa-wifi"></i>
+                        </div>
+
+                    </div>
+                    <div class="header-button">
+                        Close
+                    </div>
+                </div>
+            </div>
+
+            <div class="pos-content">
+
+                <div class="window">
+                    <div class="subwindow">
+                        <div class="subwindow-container">
+                            <div class="subwindow-container-fix screens">
+
+                                <div class="product-screen screen">
+                                    <div class="leftpane">
+                                        <div class="window">
+                                            <div class="subwindow">
+                                                <div class="subwindow-container">
+                                                    <div class="subwindow-container-fix">
+                                                        <div class="order-container">
+                                                            <div class="order-scroller touch-scrollable">
+                                                                <div class="order">
+
+
+                                                                    <ul class="orderlines oe_hidden">
+                                                                        <li class="orderline selected ">
+            <span class="product-name">
+                Miscellaneous
+
+            </span>
+                                                                            <span class="price">
+                18.00 €
+            </span>
+                                                                            <ul class="info-list">
+
+                                                                                <li class="info">
+                                                                                    <em>
+                                                                                        1.000
+                                                                                    </em>
+                                                                                    Unit(s)
+                                                                                    at
+                                                                                    18.00 €
+                                                                                    /
+                                                                                    Unit(s)
+                                                                                </li>
+
+
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="summary clearfix  oe_hidden">
+                                                                        <div class="line">
+                                                                            <div class="entry total">
+                                                                                <span class="label">Total: </span> <span
+                                                                                        class="value">18.00 €</span>
+                                                                                <div class="subentry">Taxes: <span
+                                                                                            class="value">0.00 €</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                    <div class="order-empty">
+                                                                        <i class="fa fa-shopping-cart"></i>
+                                                                        <h1>Your shopping cart is empty</h1>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="subwindow collapsed">
+                                                <div class="subwindow-container">
+                                                    <div class="subwindow-container-fix pads">
+                                                        <div class="control-buttons oe_hidden"></div>
+                                                        <div class="actionpad">
+                                                            <button class="button set-customer ">
+                                                                <i class="fa fa-user"></i>
+                                                                Customer
+                                                            </button>
+                                                            <button class="button pay">
+                                                                <div class="pay-circle">
+                                                                    <i class="fa fa-chevron-right"></i>
+                                                                </div>
+                                                                Payment
+                                                            </button>
+                                                        </div>
+                                                        <div class="numpad">
+                                                            <button class="input-button number-char">1</button>
+                                                            <button class="input-button number-char">2</button>
+                                                            <button class="input-button number-char">3</button>
+                                                            <button class="mode-button selected-mode"
+                                                                    data-mode="quantity">Qty
+                                                            </button>
+                                                            <br>
+                                                            <button class="input-button number-char">4</button>
+                                                            <button class="input-button number-char">5</button>
+                                                            <button class="input-button number-char">6</button>
+                                                            <button class="mode-button" data-mode="discount">Disc
+                                                            </button>
+                                                            <br>
+                                                            <button class="input-button number-char">7</button>
+                                                            <button class="input-button number-char">8</button>
+                                                            <button class="input-button number-char">9</button>
+                                                            <button class="mode-button" data-mode="price">Price</button>
+                                                            <br>
+                                                            <button class="input-button numpad-minus">+/-</button>
+                                                            <button class="input-button number-char">0</button>
+                                                            <button class="input-button number-char">.</button>
+                                                            <button class="input-button numpad-backspace">
+                                                                <img src="<%- assetPath('backspace.png') %>"
+                                                                     style="pointer-events: none;" width="24"
+                                                                     height="21">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rightpane">
+                                        <table class="layout-table">
+                                            <tbody>
+                                            <tr class="header-row">
+                                                <td class="header-cell">
+                                                    <div>
+                                                        <header class="rightpane-header">
+                                                            <div class="breadcrumbs">
+                <span class="breadcrumb">
+                    <span class=" breadcrumb-button breadcrumb-home js-category-switch">
+                        <i class="fa fa-home"></i>
+                    </span>
+                </span>
+
+                                                            </div>
+                                                            <div class="searchbox">
+                                                                <input placeholder="Search Products">
+                                                                <span class="search-clear"></span>
+                                                            </div>
+                                                        </header>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="content-row">
+                                                <td class="content-cell">
+                                                    <div class="content-container">
+                                                        <div class="product-list-container">
+                                                            <div class="product-list-scroller touch-scrollable">
+                                                                <div class="product-list">
+                <span class="product" data-product-id="1">
+            <div class="product-img">
+                <img src="<%- assetPath('noprod.png') %>">
+
+                    <span class="price-tag">
+                        18.00 €
+                    </span>
+
+
+            </div>
+            <div class="product-name">
+                Miscellaneous
+            </div>
+        </span></div>
+                                                            </div>
+                                                            <span class="placeholder-ScrollbarWidget"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
