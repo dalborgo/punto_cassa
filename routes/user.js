@@ -23,8 +23,6 @@ var appRouter = function (app) {
         });
     });
 
-
-
     app.post("/api/user/create", function (req, res) {
         var user = new UserModel({
             username: req.body.username,

@@ -28,7 +28,8 @@ const CouchbaseStore = require('connect-couchbase')(session);
 const couchbaseStore = new CouchbaseStore({
     bucket: config.couchbase.bucket,               //optional
     host: config.couchbase.server,          //optional
-    prefix: 'sess|'
+    prefix: 'Sess|'
+    //ttl: 84400 in secondi
 });
 
 app.use(session({
@@ -64,10 +65,19 @@ app.use(function (req, res, next) {
 var user = require("./routes/user.js")(app);
 var index = require("./routes/index.js")(app);
 var print = require("./routes/print.js")(app);
+var cate = require("./routes/category.js")(app);
+var tab = require("./routes/table.js")(app);
+var prod = require("./routes/product.js")(app);
 var secure = require("./routes/secure.js")(app, passport);
+var synch_macro = require("./routes/sync.js")(app);
 
 ottoman.store = module.exports.store;
-var UserModel = require("./models/user");
+//var UserModel = require("./models/user");
+var mc = require("./models/macroCategory");
+var cat = require("./models/category");
+var tab2 = require("./models/table");
+var room = require("./models/room");
+var prod2 = require("./models/product");
 
 ottoman.ensureIndices(function (error) {
     if (error) {
